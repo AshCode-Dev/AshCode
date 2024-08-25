@@ -1076,7 +1076,72 @@ header nav {
     flex-direction: row;
 }
 
+seciton#contact-us {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 7rem 0;
+    background: #2b2b2b;
+    text-align: center;
+}
 
+.contact-us .form {
+    width: 900px;
+    margin: 3rem auto 0;
+}
+.contact-us .form label {
+    display: none;
+}
+.contact-us .form input,
+.contact-us .form textarea {
+    background: #1d1d1d;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid darkgray;
+}
+.form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .contact-us form .form-field-text,
+        .contact-us form .form-field-email {
+            width: 50%;
+        }
+        
+        .contact-us form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .contact-us form .form-field-textarea,
+        .contact-us form .form-field-submit {
+            width: 100%;
+        }
+        .contact-us form .form-field-submit button {width: 100%;border-radius: 5px;background: grey;border: 0;padding: 15px;margin: 0;}
+        .contact-us form .form-field-submit button:hover {
+            background: rgb(137 237 237 / 100%);
+        }
+        .contact-us .form textarea {
+            border-top: 0;
+        }
+        
+        .contact-us form .form-field-email input {
+            border-left: 0;
+        }
+        .contact-us .form textarea::placeholder{opacity: 0.4;}
+
+@media (max-width: 1000px){
+    .contact-us .form {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 100px;
+    }
+}
 
 @media (max-width: 1650px){
 
@@ -1289,7 +1354,9 @@ header nav {
 /* Mobile Responsive */
 @media (max-width: 767px){
 
-
+.contact-us .form {
+        padding: 0 50px;
+    }
 
 
     .col-img {
