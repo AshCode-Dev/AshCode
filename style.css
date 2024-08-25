@@ -1357,7 +1357,9 @@ seciton#contact-us {
 .contact-us .form {
         padding: 0 50px;
     }
-
+.contact-us form .form-field-text, .contact-us form .form-field-email {
+        width: 100%;
+    }
 
     .col-img {
         height: 210px;
