@@ -7,6 +7,10 @@
     font-family: "Outfit", sans-serif;
     color: #FFF;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* colors #009e7b, #F6F6F6 */
 .left {
