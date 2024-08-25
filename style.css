@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -9,28 +7,11 @@
 }
 
 /* colors #009e7b, #F6F6F6 */
-.left {
-    gap: 20px;
-    display: flex;
-}
 
-.left {
-    gap: 20px;
-    display: flex;
-}
-
-header nav {flex-direction: column;gap: 0;margin-top: 10px;}
-
-header h2 {
-    line-height: 25px;
-}
 
 body{
     background: #1D1D1D;
     cursor: url('images/cursor.svg'), auto;
-}
-body {
-    overflow-x: hidden;
 }
 /* body,button,img {
     cursor: none !important;
@@ -64,11 +45,6 @@ body {
 body em{
     color: #89eded;
     font-style: normal;
-}
-header h2 {
-    font-size: 25px;
-    margin-bottom: 0;
-    margin-left: 0;
 }
 
 /* // <uniquifier>: Use a uniquifier for the class name
@@ -134,7 +110,7 @@ h3 {
     margin-bottom: 15px;
 }
 
-h1,h2 {
+h1 {
     font-size: 135px;
     line-height: 109px;
     margin-bottom: 25px;
@@ -608,11 +584,12 @@ h4 {
     border-radius: 18px;
   }
 
-  section.skills-sec,.portfolio{
-    max-width: 80%;
+  section.skills-sec{
+    width: 80%;
+    height: 900px;
     margin: 0 auto;
+    padding-top: 90px;
     position: relative;
-    padding: 20px 0;
 }
 
 .tabcontent h3 {
@@ -929,7 +906,7 @@ section#contact-me form {
     height: 180px;
     display: flex;
     place-content: center;;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   section.ftr .ftr-inner {
@@ -1016,86 +993,65 @@ header nav a:hover::before {
 body section#exp h1{
     margin-bottom: 55px !important;
 }
-
-
-.col-img {
-    height: 340px;
-    }
-
-.img-portfolio {
-    height: 100%;
+seciton#contact-us {
+    position: relative;
     width: 100%;
-    transition: 8S;
-    background-size: cover;
-    }
-    
-    .col-img:hover .img-portfolio {
-    background-position: bottom;
-    transition: 8s;
-    }
+    margin: 0 auto;
+    display: block;
+    padding: 7rem 0;
+    background: #2b2b2b;
+    text-align: center;
+}
 
-    section.portfolio {position: relative;padding: 70px 0;}
-
-    .portfolio .swiper-button-next, .portfolio .swiper-button-prev {
+.contact-us .form {
+    width: 900px;
+    margin: 3rem auto 0;
+}
+.contact-us .form label {
+    display: none;
+}
+.contact-us .form input,
+.contact-us .form textarea {
     background: #1d1d1d;
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    color: #fff;
-    bottom: 49% !important;
-    top: auto;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid darkgray;
 }
-
-.portfolio .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 27px !important;
-}
-
-.portfolio  .col-img {
-    border-radius: 10px !important;
-    overflow: hidden;
-}
-
-.portfolio .swiper-pagination {
-    bottom: 20px !important;
-}
-
-.portfolio .swiper-pagination-bullet {
-    background: #fff;
-    height: 15px;
-    width: 15px;
-}
-
-.portfolio  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border: 2px solid #1d1d1d;
-    outline: 2px solid #89eded;
-}
-.swiper-container {
-    margin-top: 50px;
-}
-header nav {
-    flex-direction: row;
-}
-
-
+.form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .contact-us form .form-field-text,
+        .contact-us form .form-field-email {
+            width: 50%;
+        }
+        
+        .contact-us form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .contact-us form .form-field-textarea,
+        .contact-us form .form-field-submit {
+            width: 100%;
+        }
+        .contact-us form .form-field-submit button {width: 100%;border-radius: 5px;background: grey;border: 0;padding: 15px;margin: 0;}
+        .contact-us form .form-field-submit button:hover {
+            background: rgb(137 237 237 / 100%);
+        }
+        .contact-us .form textarea {
+            border-top: 0;
+        }
+        
+        .contact-us form .form-field-email input {
+            border-left: 0;
+        }
+        .contact-us .form textarea::placeholder{opacity: 0.4;}
 
 @media (max-width: 1650px){
-
-    header nav {
-        flex-direction: column;
-    }  nav {
-        height: 90px;
-        justify-content: space-evenly;
-    }
-    
-    .left {
-        flex-direction: column;
-        gap: 1px;
-        align-items: center;
-    }
-    
-    .left a {
-        text-align: center !important;
-    }
     section {
         width: 90% !important;
         overflow: hidden;
@@ -1164,6 +1120,15 @@ header nav {
         width: 10%;
     }
     
+}
+
+@media (max-width: 1000px){
+    .contact-us .form {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 100px;
+    }
 }
 
 @media (max-width: 1330px){
@@ -1288,36 +1253,17 @@ header nav {
 
 /* Mobile Responsive */
 @media (max-width: 767px){
+    .contact-us .form {
+        padding: 0 50px;
+    }
 
-
-
-
-    .col-img {
-        height: 210px;
+    .contact-us form .form-field-text, .contact-us form .form-field-email {
+        width: 100%;
     }
     
-    .portfolio .swiper-button-next, .portfolio .swiper-button-prev {
-        height: 50px;
-        width: 50px;
-        bottom: 106px !important;
-        margin: 11px;
-    }
-    
-    .portfolio .swiper-button-next:after, .swiper-button-prev:after {
-        font-size: 14px !important;
-    }
-    
-    h2 {
-        font-size: 60px;
-        margin-bottom: 0;
-    }
-    
-    .swiper-container {
-        margin-top: 0;
-    }
-    
-    .portfolio .swiper-pagination {
-        display: none;
+    .contact-us form .form-field-email input {
+        border-left: 1px solid darkgray;
+        border-top: 0;
     }
 
     body h1 {
